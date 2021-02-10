@@ -1,0 +1,11 @@
+version: '3.5'
+services:
+  postgres:
+    image: postgres:9.4-alpine
+    container_name: kit-user-pg
+    environment:
+      POSTGRES_PASSWORD: 1234
+      POSTGRES_DB: test
+      POSTGRES_USER: muklis
+    ports:
+      - 5432:5432
